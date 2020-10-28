@@ -34,10 +34,10 @@ int main()
         {
             if (!finishedEating[i])
             {
-                if (sticks[i] && sticks[(i + 1) % 5])
+                if (sticks[i] && sticks[(i + 1) % n])
                 {
                     sticks[i] = false;
-                    sticks[(i + 1) % 5] = false;
+                    sticks[(i + 1) % n] = false;
                     cout << "Philosopher " << i + 1 << " is eating\n";
                     finishedEating[i] = true;
                     flag = true;
